@@ -1,0 +1,15 @@
+Instruction: Use a Virtual machine or a cloud-based linux instance for experimentation.
+Install a software firewall like UFW(Uncomplicated Firewall) if not already installed.
+Simulate the following tasks:
+Allow incoming SSH traffic (port 22).
+Allow incoming HTTP traffic (port 80).
+Block all other incoming and outgoing traffic.
+
+Commands:
+#sudo apt install ufw
+#sudo ufw allow 22/tcp
+#sudo ufw allow 80/tcp
+#sudo ufw default deny incoming
+#sudo ufw default deny outgoing
+#sudo ufw enable(this enables UFW)
+#sudo ufw status(checks the status of UFW)
